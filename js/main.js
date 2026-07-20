@@ -651,7 +651,7 @@ const Cart = (() => {
     const count = items.reduce((sum, i) => sum + i.qty, 0);
     document.querySelectorAll('.cart-count').forEach(el => {
       el.textContent = count;
-      el.style.display = count ? '' : 'none';
+      el.style.display = count ? 'inline-flex' : 'none';
     });
   }
 

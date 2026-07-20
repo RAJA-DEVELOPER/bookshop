@@ -617,7 +617,7 @@
   background: transparent;
 }
 
-.books-tab use { fill: none; stroke: currentColor; }
+.books-tab svg { fill: none; stroke: currentColor; }
 
 .books-tab.active, .books-tab:hover {
   background: var(--gradient-gold);

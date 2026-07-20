@@ -69,6 +69,8 @@
   transition: transform var(--transition-bounce);
 }
 
+.navbar-logo-icon svg { fill: none; stroke: currentColor; }
+
 .navbar-logo:hover .navbar-logo-icon {
   transform: rotate(-5deg) scale(1.1);
 }
@@ -95,14 +97,6 @@
   text-transform: uppercase;
   font-family: var(--font-body);
   font-weight: 400;
-}
-
-[data-theme="light"] .navbar:not(.scrolled) .navbar-logo-title {
-  color: var(--text-primary);
-}
-
-[data-theme="light"] .navbar:not(.scrolled) .navbar-logo-subtitle {
-  color: var(--text-muted);
 }
 
 [data-theme="light"] .navbar.scrolled .navbar-logo-title {
@@ -159,16 +153,6 @@
   height: 2px;
   background: var(--gradient-gold);
   border-radius: var(--radius-full);
-}
-
-[data-theme="light"] .navbar:not(.scrolled) .nav-link {
-  color: var(--text-primary);
-}
-
-[data-theme="light"] .navbar:not(.scrolled) .nav-link:hover,
-[data-theme="light"] .navbar:not(.scrolled) .nav-link.active {
-  color: var(--text-primary);
-  background: var(--color-gold-50);
 }
 
 [data-theme="light"] .navbar.scrolled .nav-link {
@@ -284,18 +268,11 @@
   background: none;
 }
 
+.nav-action-btn svg { fill: none; stroke: currentColor; }
+
 .nav-action-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   color: white;
-}
-
-[data-theme="light"] .navbar:not(.scrolled) .nav-action-btn {
-  color: var(--text-primary);
-}
-
-[data-theme="light"] .navbar:not(.scrolled) .nav-action-btn:hover {
-  color: var(--text-primary);
-  background: var(--color-gold-50);
 }
 
 [data-theme="light"] .navbar.scrolled .nav-action-btn {
@@ -316,6 +293,22 @@
   background: var(--color-burgundy);
   border-radius: 50%;
   border: 2px solid transparent;
+}
+
+.cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: var(--color-burgundy);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 /* === HAMBURGER (MOBILE) === */
@@ -354,10 +347,6 @@
 
 .hamburger.active span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
-}
-
-[data-theme="light"] .navbar:not(.scrolled) .hamburger span {
-  background: var(--text-primary);
 }
 
 [data-theme="light"] .navbar.scrolled .hamburger span {
@@ -440,6 +429,8 @@
   background: rgba(255,255,255,0.1);
 }
 
+.mobile-menu-close svg { fill: none; stroke: currentColor; }
+
 [data-theme="light"] .mobile-menu-panel .navbar-logo-subtitle {
   color: var(--text-muted);
 }
@@ -473,6 +464,8 @@
   transition: all var(--transition-fast);
   text-decoration: none;
 }
+
+.mobile-nav-link svg { fill: none; stroke: currentColor; }
 
 [data-theme="light"] .mobile-nav-link { color: var(--text-primary); }
 
@@ -573,12 +566,32 @@
 
 /* === PREFERENCE QUERIES === */
 
-@media (max-width: 360px) {
-  .navbar-inner { padding-inline: var(--space-3); gap: var(--space-3); }
+@media (max-width: 480px) {
+  .navbar-inner { padding-inline: var(--space-4); gap: var(--space-1); }
   .navbar-logo-icon { width: 34px; height: 34px; font-size: 1rem; }
   .navbar-logo-subtitle { display: none; }
-  .navbar-logo-title { font-size: 0.9rem; }
-  .nav-actions { gap: var(--space-1); }
+  .navbar-logo-title { font-size: 0.95rem; }
+  .nav-actions { gap: 2px; }
+  .nav-actions .nav-action-btn[aria-label="Wishlist"] { display: none; }
+  .nav-action-btn { width: 34px; height: 34px; font-size: 0.9rem; }
+  .nav-action-btn[aria-label="Cart"] { width: 40px; height: 40px; font-size: 1.4rem; border: 1px solid var(--border-light); background: var(--glass-bg-light); }
+  .nav-action-btn[aria-label="Cart"] svg { stroke-width: 2.5; }
+  .nav-action-btn[data-rtl-toggle] [data-dir-label] { display: none; }
+  .nav-action-btn[data-search-toggle] { display: none; }
+  .hamburger { min-width: 34px; min-height: 34px; padding: var(--space-1); }
+  .hamburger span { width: 20px; }
+}
+
+@media (max-width: 360px) {
+  .navbar-inner { padding-inline: var(--space-3); gap: 2px; }
+  .navbar-logo-title { font-size: 0.85rem; }
+  .navbar-logo-icon { width: 30px; height: 30px; font-size: 0.85rem; }
+  .nav-actions .nav-action-btn[aria-label="Wishlist"] { display: none; }
+  .nav-action-btn { width: 32px; height: 32px; font-size: 0.85rem; }
+  .nav-action-btn[data-rtl-toggle] [data-dir-label] { display: none; }
+  .nav-action-btn[data-search-toggle] { display: none; }
+  .hamburger { min-width: 32px; min-height: 32px; padding: var(--space-1); }
+  .hamburger span { width: 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
