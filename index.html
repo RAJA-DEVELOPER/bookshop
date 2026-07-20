@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Folio & Ink — A luxury bookshop and premium stationery boutique. Discover curated books, artisan journals, and fine writing instruments." />
+  <meta name="keywords" content="bookshop, luxury books, stationery, premium journals, rare books, boutique bookstore" />
+  <meta property="og:title" content="Folio & Ink — Luxury Bookshop & Stationery" />
+  <meta property="og:description" content="Where every page tells a story. Curated books and premium stationery for the discerning reader." />
+  <meta property="og:type" content="website" />
+  <title>Folio & Ink — Luxury Bookshop & Stationery</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+<!-- Page Transition -->
+
+<!-- Reading Progress Bar -->
+<div class="progress-bar" role="progressbar" aria-label="Reading progress"></div>
+
+<!-- ============================================
+     NAVBAR
+============================================ -->
+<nav class="navbar" data-transparent aria-label="Main navigation">
+  <div class="navbar-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="navbar-logo" aria-label="Folio & Ink Home">
+      <div class="navbar-logo-icon" aria-hidden="true"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-books"/></svg></div>
+      <div class="navbar-logo-text">
+        <span class="navbar-logo-title">Folio & Ink</span>
+        <span class="navbar-logo-subtitle">Bookshop & Stationery</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-menu" role="navigation">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Nav Actions -->
+    <div class="nav-actions">
+      <button class="nav-action-btn tooltip" data-search-toggle data-tooltip="Search (Ctrl+K)" aria-label="Search"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-search"/></svg></button>
+      <button class="nav-action-btn tooltip" data-theme-toggle aria-label="Toggle dark mode">
+        <span data-theme-icon><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-moon"/></svg></span>
+      </button>
+      <button class="nav-action-btn tooltip" data-rtl-toggle aria-label="Toggle RTL mode">
+        <svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-globe"/></svg><span data-dir-label style="font-size:0.6rem;font-weight:700;margin-inline-start:2px;">RTL</span>
+      </button>
+      <button class="nav-action-btn tooltip" data-tooltip="Cart" aria-label="Shopping cart" style="position:relative;">
+        <svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-cart"/></svg>
+        <span class="cart-count" style="position:absolute;top:4px;right:4px;background:var(--color-burgundy);color:white;font-size:11px;font-weight:700;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;display:none;">0</span>
+      </button>
+      <a href="contact.html" class="btn btn-primary btn-sm desktop-only" style="margin-inline-start:var(--space-2);">Visit Us</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-panel">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-books"/></svg></div>
+        <div class="navbar-logo-text">
+          <span class="navbar-logo-title" style="color:var(--text-primary)">Folio & Ink</span>
+          <span class="navbar-logo-subtitle">Bookshop & Stationery</span>
+        </div>
+      </a>
+      <button class="mobile-menu-close" aria-label="Close menu"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-close"/></svg></button>
+    </div>
+    <nav class="mobile-nav" role="navigation">
+      <a href="index.html" class="mobile-nav-link"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-home"/></svg> Home</a>
+      <a href="home2.html" class="mobile-nav-link"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-sparkles"/></svg> Home 2</a>
+      <a href="about.html" class="mobile-nav-link"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-info"/></svg> About</a>
+      <a href="services.html" class="mobile-nav-link"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-gear"/></svg> Services</a>
+      <a href="blog.html" class="mobile-nav-link"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-newspaper"/></svg> Blog</a>
+      <a href="contact.html" class="mobile-nav-link"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-mailbox"/></svg> Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <div class="mobile-menu-tools">
+        <button class="btn btn-secondary btn-sm" data-theme-toggle>
+          <span data-theme-icon><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-moon"/></svg></span> Dark Mode
+        </button>
+        <button class="btn btn-secondary btn-sm" data-rtl-toggle>
+          <svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-globe"/></svg> <span data-dir-label>RTL</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     HERO
+============================================ -->
+<header class="page-hero" aria-label="Home">
+  <div class="page-hero-bg" aria-hidden="true"></div>
+  <div class="page-hero-bg-image" style="background-image: url('assets/img/store_hero_1784524721900.png');" aria-hidden="true"></div>
+  <div class="page-hero-pattern" aria-hidden="true"></div>
+  <div class="container page-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html" class="breadcrumb-item">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span class="breadcrumb-item active" aria-current="page">Welcome</span>
+    </nav>
+    <h1 class="page-hero-title">Where Every Page<br>Tells a <span style="background:var(--gradient-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Story</span></h1>
+    <p class="page-hero-subtitle">Discover our curated collection of rare books, premium stationery, and artisan journals. A sanctuary for those who love the written word.</p>
+    <div style="display:flex;gap:var(--space-4);flex-wrap:wrap;margin-top:var(--space-8);">
+      <a href="services.html" class="btn btn-primary btn-lg">Explore Collection</a>
+      <a href="about.html" class="btn btn-secondary btn-lg" style="color:white;border-color:rgba(255,255,255,0.3);">Our Story</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================
+     SECTION 2: FEATURED CATEGORIES
+============================================ -->
+<section class="categories-section section" aria-label="Book categories">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-eyebrow">Browse by Genre</span>
+      <h2 class="section-title">Curated Collections</h2>
+      <p class="section-subtitle">Every reader finds their world between our shelves — from timeless classics to bold new voices.</p>
+    </div>
+
+    <div class="categories-grid">
+      <a href="#" class="category-card reveal" aria-label="Fiction — 3,200 books">
+        <div class="category-card-bg cat-bg-1"></div>
+        <div class="category-card-overlay"></div>
+        <div class="category-card-content">
+          <div class="category-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-open-book"/></svg></div>
+          <h3 class="category-title">Fiction</h3>
+          <p class="category-count">3,200+ Books</p>
+        </div>
+      </a>
+
+      <a href="#" class="category-card reveal reveal-delay-1" aria-label="Non-Fiction — 2,800 books">
+        <div class="category-card-bg cat-bg-2"></div>
+        <div class="category-card-overlay"></div>
+        <div class="category-card-content">
+          <div class="category-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-brain"/></svg></div>
+          <h3 class="category-title">Non-Fiction</h3>
+          <p class="category-count">2,800+ Books</p>
+        </div>
+      </a>
+
+      <a href="#" class="category-card reveal reveal-delay-2" aria-label="Poetry — 1,400 books">
+        <div class="category-card-bg cat-bg-3"></div>
+        <div class="category-card-overlay"></div>
+        <div class="category-card-content">
+          <div class="category-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-write"/></svg></div>
+          <h3 class="category-title">Poetry</h3>
+          <p class="category-count">1,400+ Books</p>
+        </div>
+      </a>
+
+      <a href="#" class="category-card reveal reveal-delay-3" aria-label="Stationery — 500 items">
+        <div class="category-card-bg cat-bg-4"></div>
+        <div class="category-card-overlay"></div>
+        <div class="category-card-content">
+          <div class="category-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-pen"/></svg></div>
+          <h3 class="category-title">Stationery</h3>
+          <p class="category-count">500+ Items</p>
+        </div>
+      </a>
+
+      <a href="#" class="category-card reveal reveal-delay-4" aria-label="Art Books — 900 books">
+        <div class="category-card-bg cat-bg-5"></div>
+        <div class="category-card-overlay"></div>
+        <div class="category-card-content">
+          <div class="category-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-palette"/></svg></div>
+          <h3 class="category-title">Art Books</h3>
+          <p class="category-count">900+ Books</p>
+        </div>
+      </a>
+
+      <a href="#" class="category-card reveal reveal-delay-5" aria-label="Children's — 1,600 books">
+        <div class="category-card-bg cat-bg-6"></div>
+        <div class="category-card-overlay"></div>
+        <div class="category-card-content">
+          <div class="category-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star"/></svg></div>
+          <h3 class="category-title">Children's</h3>
+          <p class="category-count">1,600+ Books</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 3: FEATURED BOOKS
+============================================ -->
+<section class="featured-books section" aria-label="Featured books">
+  <div class="container">
+    <div class="flex-between" style="margin-bottom:var(--space-8);flex-wrap:wrap;gap:var(--space-4);">
+      <div class="reveal">
+        <span class="section-eyebrow">Hand-picked for You</span>
+        <h2 class="section-title" style="margin-bottom:0;">Featured Books</h2>
+      </div>
+      <a href="#" class="btn btn-secondary reveal-right">View All Books →</a>
+    </div>
+
+    <!-- Tabs -->
+    <div class="books-tabs" role="tablist">
+      <button class="books-tab active" data-filter="all" role="tab">All</button>
+      <button class="books-tab" data-filter="fiction" role="tab">Fiction</button>
+      <button class="books-tab" data-filter="nonfiction" role="tab">Non-Fiction</button>
+      <button class="books-tab" data-filter="poetry" role="tab">Poetry</button>
+      <button class="books-tab" data-filter="stationery" role="tab">Stationery</button>
+    </div>
+
+    <!-- Books Grid -->
+    <div class="grid grid-4">
+
+      <!-- Book 1 -->
+      <article class="book-card reveal" data-category="fiction">
+        <div class="book-cover-wrap">
+          <img src="assets/img/book_fantasy_1784563203372.png" alt="The Forest at the End of Time" style="width:100%;height:100%;object-fit:cover;">
+          <div class="book-badge">
+            <span class="badge badge-emerald">Bestseller</span>
+          </div>
+          <div class="book-quick-actions">
+            <button class="btn btn-primary btn-sm" style="flex:1;" data-add-to-cart data-book-id="book1" data-book-title="The Forest at the End of Time" data-price="18.99"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-cart"/></svg> Add to Cart</button>
+          </div>
+        </div>
+        <div class="book-body">
+          <p class="book-genre">Literary Fiction</p>
+          <h3 class="book-title">The Forest at the End of Time</h3>
+          <p class="book-author">by Eleanor Marsh</p>
+          <div class="book-rating">
+            <div class="stars" aria-label="4.8 stars"><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg></div>
+            <span class="book-rating-count">(247)</span>
+          </div>
+          <div class="book-footer">
+            <div>
+              <span class="book-price">$18.99</span>
+              <span class="book-price-old">$24.99</span>
+            </div>
+            <button class="add-to-cart-btn tooltip" data-tooltip="Add to cart" data-add-to-cart data-book-id="book1" data-book-title="The Forest at the End of Time" data-price="18.99" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Book 2 -->
+      <article class="book-card reveal reveal-delay-1" data-category="nonfiction">
+        <div class="book-cover-wrap">
+          <img src="assets/img/book_classic_1784563238911.png" alt="The Architecture of Thought" style="width:100%;height:100%;object-fit:cover;">
+          <div class="book-badge">
+            <span class="badge badge-gold">New</span>
+          </div>
+          <div class="book-quick-actions">
+            <button class="btn btn-primary btn-sm" style="flex:1;" data-add-to-cart data-book-id="book2" data-book-title="The Architecture of Thought" data-price="22.99"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-cart"/></svg> Add to Cart</button>
+          </div>
+        </div>
+        <div class="book-body">
+          <p class="book-genre">Non-Fiction</p>
+          <h3 class="book-title">The Architecture of Thought</h3>
+          <p class="book-author">by Dr. James Whitfield</p>
+          <div class="book-rating">
+            <div class="stars" aria-label="4.6 stars"><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star"/></svg></div>
+            <span class="book-rating-count">(183)</span>
+          </div>
+          <div class="book-footer">
+            <div>
+              <span class="book-price">$22.99</span>
+            </div>
+            <button class="add-to-cart-btn tooltip" data-tooltip="Add to cart" data-add-to-cart data-book-id="book2" data-book-title="The Architecture of Thought" data-price="22.99" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Book 3 -->
+      <article class="book-card reveal reveal-delay-2" data-category="poetry">
+        <div class="book-cover-wrap">
+          <img src="assets/img/book_burgundy_1784524778972.png" alt="Crimson Verses" style="width:100%;height:100%;object-fit:cover;">
+          <div class="book-badge">
+            <span class="badge badge-burgundy">Award</span>
+          </div>
+          <div class="book-quick-actions">
+            <button class="btn btn-primary btn-sm" style="flex:1;" data-add-to-cart data-book-id="book3" data-book-title="Crimson Verses" data-price="15.99"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-cart"/></svg> Add to Cart</button>
+          </div>
+        </div>
+        <div class="book-body">
+          <p class="book-genre">Poetry</p>
+          <h3 class="book-title">Crimson Verses & Midnight Prose</h3>
+          <p class="book-author">by Amara Holloway</p>
+          <div class="book-rating">
+            <div class="stars" aria-label="5 stars"><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg></div>
+            <span class="book-rating-count">(312)</span>
+          </div>
+          <div class="book-footer">
+            <div>
+              <span class="book-price">$15.99</span>
+              <span class="book-price-old">$19.99</span>
+            </div>
+            <button class="add-to-cart-btn tooltip" data-tooltip="Add to cart" data-add-to-cart data-book-id="book3" data-book-title="Crimson Verses" data-price="15.99" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Book 4 -->
+      <article class="book-card reveal reveal-delay-3" data-category="stationery">
+        <div class="book-cover-wrap">
+          <img src="assets/img/stationery_journal_1784524805514.png" alt="Leather Journal" style="width:100%;height:100%;object-fit:cover;">
+          <div class="book-badge">
+            <span class="badge badge-gold">Premium</span>
+          </div>
+          <div class="book-quick-actions">
+            <button class="btn btn-primary btn-sm" style="flex:1;" data-add-to-cart data-book-id="journal1" data-book-title="Artisan Leather Journal" data-price="45.00"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-cart"/></svg> Add to Cart</button>
+          </div>
+        </div>
+        <div class="book-body">
+          <p class="book-genre">Premium Stationery</p>
+          <h3 class="book-title">Artisan Leather Journal — Gold Edition</h3>
+          <p class="book-author">Folio & Ink Originals</p>
+          <div class="book-rating">
+            <div class="stars" aria-label="4.9 stars"><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg></div>
+            <span class="book-rating-count">(96)</span>
+          </div>
+          <div class="book-footer">
+            <div>
+              <span class="book-price">$45.00</span>
+            </div>
+            <button class="add-to-cart-btn tooltip" data-tooltip="Add to cart" data-add-to-cart data-book-id="journal1" data-book-title="Artisan Leather Journal" data-price="45.00" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 4: BESTSELLER SPOTLIGHT
+============================================ -->
+<section class="bestseller-section" aria-label="Bestseller of the month">
+  <div class="bestseller-bg-pattern" aria-hidden="true"></div>
+  <div class="container">
+    <div class="bestseller-inner">
+
+      <!-- Visual -->
+      <div class="bestseller-visual reveal-left">
+        <div class="bestseller-visual-bg" style="background: linear-gradient(135deg, rgba(26,58,22,0.85), rgba(44,51,68,0.7)), url('assets/img/store_hero_1784524721900.png') center/cover;" aria-hidden="true"></div>
+        <div class="bestseller-book-display">
+          <div class="bestseller-main-book">
+            <div style="width:100%;height:100%;background:linear-gradient(rgba(26,58,22,0.4),rgba(26,58,22,0.4)),url('assets/img/book_emerald_1784524766970.png') center/cover;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;padding:24px;text-align:center;">
+              <span style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;line-height:1.3;text-shadow:0 2px 4px rgba(0,0,0,0.5);margin-bottom:8px;">The Emerald Chronicle</span>
+              <span style="font-size:0.8rem;opacity:0.9;font-family:'Nunito Sans',sans-serif;text-shadow:0 1px 2px rgba(0,0,0,0.5);">S. Fairweather</span>
+            </div>
+          </div>
+          <div class="bestseller-badge-circle">
+            <span class="bestseller-badge-num">#1</span>
+            <span class="bestseller-badge-text">Best<br>Seller</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="bestseller-content reveal-right">
+        <span class="section-eyebrow bestseller-eyebrow" style="color:var(--color-gold-light);">Book of the Month</span>
+
+        <h2 class="bestseller-title">The Emerald Chronicle: A Journey Through Written Time</h2>
+
+        <p class="bestseller-author" style="color:rgba(255,255,255,0.6);">by Sebastian Fairweather</p>
+
+        <p class="bestseller-desc">
+          A sweeping literary epic that weaves mythology, history, and the power of storytelling into one unforgettable narrative. Acclaimed by critics worldwide as "a masterwork of modern literature."
+        </p>
+
+        <div class="bestseller-meta">
+          <div class="bestseller-meta-item">
+            <p class="bestseller-meta-label">Genre</p>
+            <p class="bestseller-meta-value">Literary Fiction</p>
+          </div>
+          <div class="bestseller-meta-item">
+            <p class="bestseller-meta-label">Pages</p>
+            <p class="bestseller-meta-value">512 Pages</p>
+          </div>
+          <div class="bestseller-meta-item">
+            <p class="bestseller-meta-label">Rating</p>
+            <p class="bestseller-meta-value" style="color:var(--color-gold-light);"><svg class="icon" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9/5.0</p>
+          </div>
+          <div class="bestseller-meta-item">
+            <p class="bestseller-meta-label">Sold</p>
+            <p class="bestseller-meta-value">48,000+</p>
+          </div>
+        </div>
+
+        <div class="bestseller-price-row">
+          <span class="bestseller-price">$24.99</span>
+          <span class="bestseller-price-old">$34.99</span>
+          <span class="badge badge-gold">Save 28%</span>
+        </div>
+
+        <div class="bestseller-actions">
+          <button class="btn btn-primary btn-lg" data-add-to-cart data-book-id="chronicle" data-book-title="The Emerald Chronicle" data-price="24.99">
+            <svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-cart"/></svg> Add to Cart
+          </button>
+          <button class="btn btn-secondary btn-lg" style="color:white;border-color:rgba(255,255,255,0.3);">
+            Preview Book
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 5: TESTIMONIALS
+============================================ -->
+<section class="testimonials-section section" aria-label="Customer reviews">
+  <div class="container">
+    <div class="section-header text-center reveal">
+      <span class="section-eyebrow">What Readers Say</span>
+      <h2 class="section-title">Stories of Delight</h2>
+      <p class="section-subtitle">Join thousands of passionate readers who have found their next favourite story with us.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="5 stars"><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg></div>
+        <p class="testimonial-text">"Walking into Folio & Ink is like stepping into another world entirely. The curation is impeccable, the staff knowledgeable, and the atmosphere simply divine."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:var(--gradient-emerald);" aria-hidden="true">SC</div>
+          <div class="testimonial-author-info">
+            <p class="testimonial-author-name">Sophia Chen</p>
+            <p class="testimonial-author-role">Author & Book Critic</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars" aria-label="5 stars"><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg></div>
+        <p class="testimonial-text">"The premium stationery collection is unmatched. My leather journal from Folio & Ink has become my most treasured possession. Quality that transcends time."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:var(--gradient-burgundy);" aria-hidden="true">MR</div>
+          <div class="testimonial-author-info">
+            <p class="testimonial-author-name">Marcus Reynolds</p>
+            <p class="testimonial-author-role">Professor of Literature</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars" aria-label="5 stars"><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg></div>
+        <p class="testimonial-text">"I've been a loyal customer for over a decade. Their rare book sourcing service found me a first edition I'd been searching for years. Truly magical."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:var(--gradient-gold);color:var(--color-slate-dark);" aria-hidden="true">IL</div>
+          <div class="testimonial-author-info">
+            <p class="testimonial-author-name">Isabella Laurent</p>
+            <p class="testimonial-author-role">Rare Books Collector</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars" aria-label="4 stars"><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star-filled"/></svg><svg class="icon icon-star-rating" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star"/></svg></div>
+        <p class="testimonial-text">"The reading events and author signings are a highlight of my cultural calendar. Folio & Ink creates community around books like no other shop I know."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:linear-gradient(135deg,#2C3344,#4A5570);" aria-hidden="true">DP</div>
+          <div class="testimonial-author-info">
+            <p class="testimonial-author-name">David Park</p>
+            <p class="testimonial-author-role">Literary Journalist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 6: CTA + AWARDS
+============================================ -->
+<section class="cta-awards-section" aria-label="Newsletter and awards">
+  <div class="cta-awards-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-grid">
+
+      <!-- CTA -->
+      <div class="cta-content reveal-left">
+        <span class="section-eyebrow" style="color:var(--color-gold-light);">Join the Community</span>
+        <h2 class="cta-title">
+          Get <span class="highlight">Exclusive</span><br />
+          Reads & Offers
+        </h2>
+        <p class="cta-desc">
+          Subscribe to our literary newsletter and receive curated book recommendations, early access to rare finds, member-only discounts, and invitations to exclusive author events.
+        </p>
+
+      </div>
+
+      <!-- Awards -->
+      <div class="reveal-right">
+        <p class="section-eyebrow" style="color:var(--color-gold-light);text-align:center;margin-bottom:var(--space-6);">Recognition & Awards</p>
+        <div class="awards-grid">
+          <div class="award-item">
+            <div class="award-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-trophy"/></svg></div>
+            <div class="award-year">2025</div>
+            <div class="award-name">Best Independent Bookstore</div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-books"/></svg></div>
+            <div class="award-year">2024</div>
+            <div class="award-name">Literary Excellence Award</div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star"/></svg></div>
+            <div class="award-year">2024</div>
+            <div class="award-name">5-Star Customer Service</div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-leaf"/></svg></div>
+            <div class="award-year">2023</div>
+            <div class="award-name">Green Retail Award</div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-pen"/></svg></div>
+            <div class="award-year">2023</div>
+            <div class="award-name">Stationery Brand of Year</div>
+          </div>
+          <div class="award-item">
+            <div class="award-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-heart"/></svg></div>
+            <div class="award-year">2022</div>
+            <div class="award-name">Community Choice Award</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+============================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-bg-decor" aria-hidden="true"></div>
+
+  <!-- Newsletter -->
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="footer-newsletter-inner">
+        <div class="footer-newsletter-content">
+          <h3>Stay in the Story</h3>
+          <p>New arrivals, exclusive events, and reading guides — delivered to your inbox.</p>
+        </div>
+        <form class="newsletter-form footer-newsletter-form" novalidate>
+          <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Newsletter email" />
+          <button type="submit" class="btn btn-primary">Subscribe →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Footer -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <div class="footer-logo-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-books"/></svg></div>
+            <div>
+              <span class="footer-logo-title">Folio & Ink</span>
+              <span class="footer-logo-subtitle">Bookshop & Stationery</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            A sanctuary for the written word since 1999. We curate extraordinary books and premium stationery for readers, writers, and dreamers worldwide.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-camera"/></svg></a>
+            <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+            <a href="#" class="social-link" aria-label="Pinterest">P</a>
+            <a href="#" class="social-link" aria-label="YouTube"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="9.75 15.02 15.5 12 9.75 8.98" fill="currentColor"/><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Explore</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="home2.html" class="footer-link">Home 2</a>
+            <a href="about.html" class="footer-link">Our Story</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="blog.html" class="footer-link">Reading Blog</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Collections</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Fiction</a>
+            <a href="#" class="footer-link">Non-Fiction</a>
+            <a href="#" class="footer-link">Poetry & Essays</a>
+            <a href="#" class="footer-link">Children's Books</a>
+            <a href="#" class="footer-link">Premium Stationery</a>
+            <a href="#" class="footer-link">Gift Sets</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Visit Us</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-map-pin"/></svg></div>
+            <p class="footer-contact-text">42 Literature Lane,<br />Mayfair, London W1K 5NE</p>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-phone"/></svg></div>
+            <p class="footer-contact-text">
+              <a href="tel:+442071234567">+44 (0)20 7123 4567</a>
+            </p>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-envelope"/></svg></div>
+            <p class="footer-contact-text">
+              <a href="mailto:hello@folioandinc.com">hello@folioandinc.com</a>
+            </p>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-clock"/></svg></div>
+            <p class="footer-contact-text">Mon–Sat: 9am – 8pm<br />Sunday: 11am – 6pm</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copyright">
+          © 2026 <a href="index.html">Folio & Ink</a>. All rights reserved. Crafted with <svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-heart"/></svg> for readers everywhere.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" class="footer-bottom-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-bottom-link">Terms of Service</a>
+          <a href="sitemap.html" class="footer-bottom-link">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>

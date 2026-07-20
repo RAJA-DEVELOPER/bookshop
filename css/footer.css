@@ -1,0 +1,358 @@
+/* ============================================
+   LUXURY BOOKSHOP - FOOTER COMPONENT
+   ============================================ */
+
+.footer {
+  background: var(--color-slate-dark);
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gradient-gold);
+  opacity: 0.4;
+}
+
+/* Decorative background */
+.footer-bg-decor {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.footer-bg-decor::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(45, 90, 39, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.footer-bg-decor::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(107, 45, 62, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* === FOOTER NEWSLETTER === */
+.footer-newsletter {
+  padding: var(--space-16) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-newsletter-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+}
+
+.footer-newsletter-content h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  color: white;
+  margin-bottom: var(--space-2);
+}
+
+.footer-newsletter-content p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--space-3);
+  flex: 1;
+  max-width: 480px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: var(--space-3) var(--space-5);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-full);
+  color: white;
+  font-family: var(--font-accent);
+  font-size: var(--font-size-sm);
+  transition: all var(--transition-base);
+}
+
+.newsletter-input::placeholder { color: rgba(255,255,255,0.35); }
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* === FOOTER MAIN === */
+.footer-main {
+  padding: var(--space-16) 0;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  gap: var(--space-12);
+}
+
+/* Footer Brand */
+.footer-brand {}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  text-decoration: none;
+}
+
+.footer-logo-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--gradient-gold);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.footer-logo-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  display: block;
+}
+
+.footer-logo-subtitle {
+  font-size: var(--font-size-xs);
+  color: var(--color-gold-light);
+  letter-spacing: var(--letter-spacing-widest);
+  text-transform: uppercase;
+  display: block;
+}
+
+.footer-brand-desc {
+  color: rgba(255,255,255,0.5);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  font-family: var(--font-accent);
+  margin-bottom: var(--space-6);
+}
+
+/* Footer Social */
+.footer-social {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.social-link {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: var(--color-gold-200);
+  color: var(--color-gold-dark);
+  border-color: var(--color-gold-200);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Footer Columns */
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: var(--space-5);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: rgba(255,255,255,0.5);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-accent);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  padding: var(--space-1) 0;
+}
+
+.footer-link::before {
+  content: '›';
+  color: var(--color-gold);
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: rgba(255,255,255,0.9);
+  transform: translateX(4px);
+}
+
+.footer-link:hover::before { opacity: 1; transform: translateX(0); }
+
+/* Footer Contact Info */
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.footer-contact-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(201, 168, 76, 0.12);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footer-contact-text {
+  color: rgba(255,255,255,0.5);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-accent);
+  line-height: var(--line-height-relaxed);
+  overflow-wrap: break-word;
+}
+
+.footer-contact-text a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+
+.footer-contact-text a:hover { color: var(--color-gold-light); }
+
+/* === FOOTER BOTTOM === */
+.footer-bottom {
+  padding: var(--space-6) 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: var(--font-size-xs);
+  color: rgba(255,255,255,0.35);
+  font-family: var(--font-accent);
+}
+
+.footer-copyright a {
+  color: var(--color-gold-light);
+  text-decoration: none;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.footer-bottom-link {
+  font-size: var(--font-size-xs);
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+  font-family: var(--font-accent);
+  transition: color var(--transition-fast);
+}
+
+.footer-bottom-link:hover { color: rgba(255,255,255,0.7); }
+
+/* === RESPONSIVE FOOTER === */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-8); }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-newsletter-inner { flex-direction: column; align-items: flex-start; }
+  .newsletter-form { max-width: 100%; width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom-inner { flex-direction: column; text-align: center; }
+  .footer-bottom-links { justify-content: center; flex-wrap: wrap; gap: var(--space-4); }
+}
+
+@media (max-width: 480px) {
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .newsletter-form .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-col { padding: 0; }
+  .footer-contact-item { flex-wrap: wrap; }
+  .footer-newsletter-inner { padding: var(--space-4); }
+  .footer-social { gap: var(--space-2); }
+  .social-link { width: 36px; height: 36px; font-size: 0.9rem; }
+}
+
+/* === RTL OVERRIDES === */
+[dir="rtl"] .footer-bg-decor::before { left: auto; right: -20%; }
+[dir="rtl"] .footer-bg-decor::after { right: auto; left: -10%; }
+[dir="rtl"] .footer-link::before { transform: translateX(4px); }
+[dir="rtl"] .footer-link:hover { transform: translateX(-4px); }
+[dir="rtl"] .footer-link:hover::before { transform: translateX(0); }

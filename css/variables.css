@@ -1,0 +1,203 @@
+/* ============================================
+   LUXURY BOOKSHOP - CSS VARIABLES & DESIGN TOKENS
+   ============================================ */
+
+:root {
+  /* === COLOR PALETTE === */
+  --color-emerald: #2D5A27;
+  --color-emerald-light: #3D7A35;
+  --color-emerald-dark: #1A3A16;
+  --color-emerald-50: rgba(45, 90, 39, 0.05);
+  --color-emerald-100: rgba(45, 90, 39, 0.1);
+  --color-emerald-200: rgba(45, 90, 39, 0.2);
+
+  --color-burgundy: #6B2D3E;
+  --color-burgundy-light: #8B3D52;
+  --color-burgundy-dark: #4A1F2C;
+  --color-burgundy-50: rgba(107, 45, 62, 0.05);
+  --color-burgundy-100: rgba(107, 45, 62, 0.1);
+
+  --color-gold: #C9A84C;
+  --color-gold-light: #D4B86A;
+  --color-gold-dark: #A8873C;
+  --color-gold-50: rgba(201, 168, 76, 0.05);
+  --color-gold-100: rgba(201, 168, 76, 0.1);
+  --color-gold-200: rgba(201, 168, 76, 0.2);
+
+  --color-ivory: #F5F0E8;
+  --color-ivory-dark: #EDE5D5;
+  --color-ivory-darker: #E0D5C0;
+
+  --color-stone: #8C7B6B;
+  --color-stone-light: #A89080;
+  --color-stone-dark: #6B5C4F;
+
+  --color-slate: #2C3344;
+  --color-slate-light: #3D4660;
+  --color-slate-dark: #1A1F2C;
+
+  /* === SEMANTIC COLORS === */
+  --bg-primary: var(--color-ivory);
+  --bg-secondary: #FAFAF7;
+  --bg-dark: var(--color-slate-dark);
+  --bg-card: #FFFFFF;
+  --bg-card-hover: var(--color-ivory);
+
+  --text-primary: var(--color-slate);
+  --text-secondary: var(--color-stone);
+  --text-accent: var(--color-emerald);
+  --text-gold: var(--color-gold-dark);
+  --text-light: #FFFFFF;
+  --text-muted: #9E8E7E;
+
+  --border-light: rgba(201, 168, 76, 0.2);
+  --border-medium: rgba(201, 168, 76, 0.4);
+  --border-strong: var(--color-gold);
+
+  /* === GRADIENTS === */
+  --gradient-hero: linear-gradient(135deg, #1A3A16 0%, #2D5A27 40%, #4A1F2C 100%);
+  --gradient-gold: linear-gradient(135deg, #C9A84C 0%, #D4B86A 50%, #A8873C 100%);
+  --gradient-emerald: linear-gradient(135deg, #2D5A27 0%, #3D7A35 100%);
+  --gradient-burgundy: linear-gradient(135deg, #6B2D3E 0%, #8B3D52 100%);
+  --gradient-ivory: linear-gradient(180deg, #F5F0E8 0%, #EDE5D5 100%);
+  --gradient-overlay: linear-gradient(to bottom, rgba(26,31,44,0.3), rgba(26,31,44,0.8));
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(245,240,232,0.6));
+
+  /* === GLASSMORPHISM === */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-bg-light: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-blur: blur(20px);
+  --glass-blur-heavy: blur(40px);
+  --glass-dark: rgba(26, 31, 44, 0.7);
+
+  /* === TYPOGRAPHY === */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Poppins', system-ui, sans-serif;
+  --font-accent: 'Nunito Sans', sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+  --font-size-5xl: 4rem;
+  --font-size-6xl: 5rem;
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.4;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wider: 0.1em;
+  --letter-spacing-widest: 0.2em;
+
+  /* === SPACING === */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* === BORDERS === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* === SHADOWS === */
+  --shadow-sm: 0 2px 8px rgba(44, 51, 68, 0.08);
+  --shadow-md: 0 4px 20px rgba(44, 51, 68, 0.12);
+  --shadow-lg: 0 8px 40px rgba(44, 51, 68, 0.16);
+  --shadow-xl: 0 16px 60px rgba(44, 51, 68, 0.2);
+  --shadow-gold: 0 4px 20px rgba(201, 168, 76, 0.3);
+  --shadow-gold-lg: 0 8px 40px rgba(201, 168, 76, 0.4);
+  --shadow-emerald: 0 4px 20px rgba(45, 90, 39, 0.3);
+  --shadow-inset: inset 0 2px 8px rgba(44, 51, 68, 0.1);
+
+  /* === TRANSITIONS === */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-bounce: 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-smooth: 600ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* === Z-INDEX === */
+  --z-negative: -1;
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-overlay: 400;
+  --z-top: 500;
+
+  /* === LAYOUT === */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1440px;
+
+  --navbar-height: 80px;
+  --navbar-height-scrolled: 64px;
+}
+
+/* === DARK MODE === */
+[data-theme="dark"] {
+  --bg-primary: #0F1117;
+  --bg-secondary: #161922;
+  --bg-card: #1E2330;
+  --bg-card-hover: #252A3A;
+  --bg-dark: #080B11;
+
+  --text-primary: #E8E0D5;
+  --text-secondary: #A89080;
+  --text-muted: #6B6060;
+  --text-accent: #87C281; /* Lighter emerald for dark mode visibility */
+  --text-gold: #D4B86A; /* Lighter gold for dark mode visibility */
+
+  --border-light: rgba(201, 168, 76, 0.15);
+  --border-medium: rgba(201, 168, 76, 0.3);
+
+  --gradient-ivory: linear-gradient(180deg, #161922 0%, #0F1117 100%);
+  --gradient-card: linear-gradient(145deg, rgba(30,35,48,0.9), rgba(22,25,34,0.6));
+
+  --glass-bg: rgba(0, 0, 0, 0.3);
+  --glass-bg-light: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-dark: rgba(0, 0, 0, 0.8);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* === RTL SUPPORT === */
+[dir="rtl"] {
+  --start: right;
+  --end: left;
+}
+
+[dir="ltr"] {
+  --start: left;
+  --end: right;
+}

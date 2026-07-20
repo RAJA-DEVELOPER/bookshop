@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create an account at Folio & Ink — Join our community of readers for faster checkout, order tracking, and exclusive member benefits." />
+  <title>Sign Up — Folio & Ink Luxury Bookshop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <style>
+    .float-toolbar { position: fixed; top: var(--space-4); inset-inline-end: var(--space-4); z-index: var(--z-sticky); display: flex; gap: var(--space-2); }
+    .float-toolbar-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border-light); background: var(--bg-primary); color: var(--text-secondary); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: .75rem; font-weight: 700; transition: all var(--transition-fast); backdrop-filter: blur(8px); box-shadow: var(--shadow-sm); }
+    .float-toolbar-btn:hover { color: var(--color-gold); border-color: var(--color-gold); box-shadow: var(--shadow-md); }
+    .float-toolbar-btn .icon { width: 18px; height: 18px; }
+    .auth-password-wrap { position: relative; }
+    .auth-password-wrap .auth-input { padding-right: 44px; }
+    .auth-password-toggle {
+      position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+      background: none; border: none; padding: 8px; cursor: pointer;
+      color: var(--text-muted); display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-md); transition: color var(--transition-fast);
+    }
+    .auth-password-toggle:hover { color: var(--color-gold); }
+    .auth-password-toggle .icon { width: 20px; height: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="float-toolbar">
+  <button class="float-toolbar-btn" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-moon"/></svg></span></button>
+  <button class="float-toolbar-btn" data-rtl-toggle aria-label="Toggle RTL"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-globe"/></svg><span data-dir-label style="font-size:.55rem;font-weight:700;margin-inline-start:2px;">RTL</span></button>
+</div>
+
+<section class="auth-section" aria-label="Sign up form">
+  <div class="container">
+    <div class="auth-card reveal">
+      <div class="auth-card-header">
+        <a href="index.html" class="navbar-logo" style="margin-bottom:var(--space-6);"><div class="navbar-logo-icon"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-books"/></svg></div><div class="navbar-logo-text"><span class="navbar-logo-title">Folio & Ink</span><span class="navbar-logo-subtitle">Bookshop & Stationery</span></div></a>
+        <h2 class="auth-card-title">Create Account</h2>
+        <p class="auth-card-subtitle">Fill in your details to get started</p>
+      </div>
+      <form class="auth-form" id="signup-form" novalidate>
+        <div class="auth-error" id="signup-error">Something went wrong. Please try again.</div>
+        <div class="auth-name-fields">
+          <div class="auth-field">
+            <label class="auth-label" for="signup-first">First Name</label>
+            <input class="auth-input" id="signup-first" type="text" placeholder="John" required autocomplete="given-name" />
+          </div>
+          <div class="auth-field">
+            <label class="auth-label" for="signup-last">Last Name</label>
+            <input class="auth-input" id="signup-last" type="text" placeholder="Doe" required autocomplete="family-name" />
+          </div>
+        </div>
+        <div class="auth-field">
+          <label class="auth-label" for="signup-email">Email</label>
+          <input class="auth-input" id="signup-email" type="email" placeholder="your@email.com" required autocomplete="email" />
+        </div>
+        <div class="auth-field">
+          <label class="auth-label" for="signup-password">Password</label>
+          <div class="auth-password-wrap">
+            <input class="auth-input" id="signup-password" type="password" placeholder="Create a password" required autocomplete="new-password" minlength="6" />
+            <button class="auth-password-toggle" type="button" aria-label="Toggle password visibility" tabindex="-1" data-toggle-password="signup-password">
+              <svg class="icon eye-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="auth-field">
+          <label class="auth-label" for="signup-confirm">Confirm Password</label>
+          <div class="auth-password-wrap">
+            <input class="auth-input" id="signup-confirm" type="password" placeholder="Confirm your password" required autocomplete="new-password" />
+            <button class="auth-password-toggle" type="button" aria-label="Toggle password visibility" tabindex="-1" data-toggle-password="signup-confirm">
+              <svg class="icon eye-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <label class="auth-check">
+          <input type="checkbox" required /> I agree to the <a href="terms.html">Terms &amp; Conditions</a> and <a href="privacy.html">Privacy Policy</a>
+        </label>
+        <button class="btn btn-primary auth-submit" type="submit">Create Account</button>
+        <div class="auth-divider">or</div>
+        <p class="auth-alt">Already have an account? <a href="login.html">Sign in</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('[data-toggle-password]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const inp = document.getElementById(btn.dataset.togglePassword);
+      if (!inp) return;
+      const isPassword = inp.type === 'password';
+      inp.type = isPassword ? 'text' : 'password';
+      btn.innerHTML = isPassword
+        ? '<svg class="icon eye-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>'
+        : '<svg class="icon eye-icon" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>';
+    });
+  });
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

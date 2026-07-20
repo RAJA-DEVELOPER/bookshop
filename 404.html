@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page not found — The page you're looking for doesn't exist. Let us help you find what you need at Folio & Ink." />
+  <title>404 — Page Not Found · Folio & Ink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <style>
+    .float-toolbar { position: fixed; top: var(--space-4); inset-inline-end: var(--space-4); z-index: var(--z-sticky); display: flex; gap: var(--space-2); }
+    .float-toolbar-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border-light); background: var(--bg-primary); color: var(--text-secondary); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: .75rem; font-weight: 700; transition: all var(--transition-fast); backdrop-filter: blur(8px); box-shadow: var(--shadow-sm); }
+    .float-toolbar-btn:hover { color: var(--color-gold); border-color: var(--color-gold); box-shadow: var(--shadow-md); }
+    .float-toolbar-btn .icon { width: 18px; height: 18px; }
+  </style>
+</head>
+<body>
+
+<div class="float-toolbar">
+  <button class="float-toolbar-btn" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-moon"/></svg></span></button>
+  <button class="float-toolbar-btn" data-rtl-toggle aria-label="Toggle RTL"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-globe"/></svg><span data-dir-label style="font-size:.55rem;font-weight:700;margin-inline-start:2px;">RTL</span></button>
+</div>
+
+<!-- 404 HERO -->
+<main class="error-page" aria-label="404 page not found">
+  <!-- Decorative background particles -->
+  <div class="error-bg-decor" aria-hidden="true">
+    <div class="error-particle error-particle-1"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-books"/></svg></div>
+    <div class="error-particle error-particle-2"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-open-book"/></svg></div>
+    <div class="error-particle error-particle-3"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-nib"/></svg></div>
+    <div class="error-particle error-particle-4"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-leaf"/></svg></div>
+    <div class="error-particle error-particle-5"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-star"/></svg></div>
+    <div class="error-particle error-particle-6"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-notebook"/></svg></div>
+  </div>
+
+  <div class="error-container">
+    <!-- Animated book stack -->
+    <div class="error-visual" aria-hidden="true">
+      <div class="error-book-stack">
+        <div class="error-book eb-1" style="background: url('assets/img/book_emerald_1784524766970.png') center/cover;"></div>
+        <div class="error-book eb-2" style="background: url('assets/img/book_burgundy_1784524778972.png') center/cover;"></div>
+        <div class="error-book eb-3" style="background: url('assets/img/stationery_journal_1784524805514.png') center/cover;"></div>
+      </div>
+
+      <!-- Giant 404 -->
+      <div class="error-404-num" aria-hidden="true">404</div>
+    </div>
+
+    <!-- Content -->
+    <div class="error-content">
+      <span class="section-eyebrow" style="color:var(--color-gold-dark);">Lost Between the Pages</span>
+      <h1 class="error-title">This page seems to have<br />gone missing</h1>
+      <p class="error-desc">Like a book misplaced among an overstuffed shelf — this page doesn't appear to exist. Perhaps it was moved, renamed, or simply never was. Let us help you find what you were looking for.</p>
+
+      <!-- Search bar -->
+      <div class="error-search">
+        <input type="search" class="error-search-input" placeholder="Search for a book, service, or page…" aria-label="Search the site" />
+        <button class="error-search-btn" aria-label="Search"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-search"/></svg></button>
+      </div>
+
+      <!-- Quick links -->
+      <div class="error-quick-links">
+        <p class="error-quick-label">Or visit one of these pages:</p>
+        <div class="error-links-grid">
+          <a href="index.html" class="error-link-card">
+            <span class="error-link-icon" aria-hidden="true"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-home"/></svg></span>
+            <span>Homepage</span>
+          </a>
+          <a href="services.html" class="error-link-card">
+            <span class="error-link-icon" aria-hidden="true"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-books"/></svg></span>
+            <span>Collections</span>
+          </a>
+          <a href="blog.html" class="error-link-card">
+            <span class="error-link-icon" aria-hidden="true"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-newspaper"/></svg></span>
+            <span>Blog</span>
+          </a>
+          <a href="contact.html" class="error-link-card">
+            <span class="error-link-icon" aria-hidden="true"><svg class="icon" aria-hidden="true" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="assets/icons.svg#icon-mailbox"/></svg></span>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;margin-top:var(--space-8);">
+        <a href="index.html" class="btn btn-primary btn-lg">← Back to Homepage</a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">Contact Support</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
