@@ -331,7 +331,7 @@
 .value-icon-2 { background: var(--color-burgundy-100); }
 .value-icon-3 { background: var(--color-gold-100); }
 .value-icon-4 { background: rgba(44,51,68,0.08); }
-.value-icon-5 { background: var(--color-stone-light)20; }
+.value-icon-5 { background: var(--color-stone-light); }
 .value-icon-6 { background: var(--color-emerald-50); }
 
 .value-title {
