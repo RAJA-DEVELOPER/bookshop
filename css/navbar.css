@@ -380,7 +380,7 @@
   transform: translateX(100%);
   transition: transform var(--transition-smooth);
   overflow-y: auto;
-  padding-right: env(safe-area-inset-right, 0px);
+  padding-inline-end: env(safe-area-inset-right, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
   display: flex;
   flex-direction: column;
@@ -576,7 +576,6 @@
   .nav-action-btn { width: 34px; height: 34px; font-size: 0.9rem; }
   .nav-action-btn[aria-label="Cart"] { width: 40px; height: 40px; font-size: 1.4rem; border: 1px solid var(--border-light); background: var(--glass-bg-light); }
   .nav-action-btn[aria-label="Cart"] svg { stroke-width: 2.5; }
-  .nav-action-btn[data-rtl-toggle] [data-dir-label] { display: none; }
   .nav-action-btn[data-search-toggle] { display: none; }
   .hamburger { min-width: 34px; min-height: 34px; padding: var(--space-1); }
   .hamburger span { width: 20px; }
@@ -588,7 +587,6 @@
   .navbar-logo-icon { width: 30px; height: 30px; font-size: 0.85rem; }
   .nav-actions .nav-action-btn[aria-label="Wishlist"] { display: none; }
   .nav-action-btn { width: 32px; height: 32px; font-size: 0.85rem; }
-  .nav-action-btn[data-rtl-toggle] [data-dir-label] { display: none; }
   .nav-action-btn[data-search-toggle] { display: none; }
   .hamburger { min-width: 32px; min-height: 32px; padding: var(--space-1); }
   .hamburger span { width: 18px; }
