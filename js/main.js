@@ -1082,9 +1082,58 @@ const HorizontalScroll = (() => {
 })();
 
 // ============================================
-// INITIALIZE ALL MODULES
+// BLOG DYNAMIC IMAGE
 // ============================================
+const BlogDynamicImage = (() => {
+  function init() {
+    // Intercept clicks on links going to blog-detail.html
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link && link.href && link.href.includes('blog-detail.html')) {
+        const card = link.closest('.blog-post-card');
+        if (card) {
+          const img = card.querySelector('.blog-cover img');
+          if (img) {
+            e.preventDefault();
+            const coverSrc = img.getAttribute('src');
+            const coverAlt = img.getAttribute('alt') || 'Blog Cover Image';
+            window.location.href = `blog-detail.html?cover=${encodeURIComponent(coverSrc)}&alt=${encodeURIComponent(coverAlt)}`;
+          }
+        }
+      }
+    });
+
+    // Apply dynamic image if we are on blog-detail.html
+    if (window.location.pathname.includes('blog-detail.html')) {
+      const params = new URLSearchParams(window.location.search);
+      const coverSrc = params.get('cover');
+      const coverAlt = params.get('alt');
+      
+      if (coverSrc) {
+        const heroBg = document.querySelector('.page-hero-bg-image');
+        if (heroBg) heroBg.style.backgroundImage = `url('${coverSrc}')`;
+        
+        const articleImg = document.querySelector('.article-cover img');
+        if (articleImg) {
+          articleImg.src = coverSrc;
+          if (coverAlt) articleImg.alt = coverAlt;
+        }
+        
+        const sidebarImg = document.querySelector('.blog-sidebar [data-add-to-cart] img');
+        if (sidebarImg) {
+          sidebarImg.src = coverSrc;
+          if (coverAlt) sidebarImg.alt = coverAlt;
+        }
+      }
+    }
+  }
+  return { init };
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize BlogDynamicImage first to ensure it runs even if other modules fail
+  try { BlogDynamicImage.init(); } catch (e) { console.error(e); }
+
   ThemeManager.init();
   RTLManager.init();
   NavbarManager.init();
