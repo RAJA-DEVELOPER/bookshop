@@ -436,13 +436,25 @@ const BookTabs = (() => {
     if (!tabsContainer) return;
 
     const tabs = tabsContainer.querySelectorAll('.books-tab');
+    const countEl = document.querySelector('.products-count');
+
+    function updateCount(filter) {
+      if (!countEl) return;
+      const books = document.querySelectorAll('.book-card[data-category]');
+      let visible = 0;
+      books.forEach(book => {
+        if (filter === 'all' || book.getAttribute('data-category') === filter) {
+          visible++;
+        }
+      });
+      countEl.textContent = visible + ' Product' + (visible !== 1 ? 's' : '');
+    }
 
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
         tabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
 
-        // Filter books based on tab data
         const filter = tab.getAttribute('data-filter');
         const books = document.querySelectorAll('.book-card[data-category], .blog-post-card[data-category]');
 
@@ -456,8 +468,14 @@ const BookTabs = (() => {
             setTimeout(() => { book.style.display = 'none'; }, 300);
           }
         });
+
+        updateCount(filter);
       });
     });
+
+    // Set initial count
+    const activeTab = tabsContainer.querySelector('.books-tab.active');
+    if (activeTab) updateCount(activeTab.getAttribute('data-filter'));
   }
 
   return { init };
