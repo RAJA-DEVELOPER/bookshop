@@ -549,6 +549,7 @@
 .stat-icon {
   font-size: 1.5rem;
   margin-bottom: var(--space-3);
+  color: rgba(255,255,255,0.75);
   opacity: 0.7;
 }
 
@@ -2237,8 +2238,8 @@
 .team-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: var(--space-6); }
 .team-card { background: var(--bg-card); border-radius: var(--radius-2xl); overflow: hidden; border: 1px solid var(--border-light); transition: transform var(--transition-medium), box-shadow var(--transition-medium); text-align: center; }
 .team-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-2xl); }
-.team-img-wrap { position: relative; height: 220px; overflow: hidden; }
-.team-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 5rem; transition: transform .5s ease; }
+.team-img-wrap { position: relative; height: 300px; overflow: hidden; }
+.team-img-placeholder { width: 100%; height: 100%; transition: transform .5s ease; }
 .team-card:hover .team-img-placeholder { transform: scale(1.08); }
 .team-social-overlay { position: absolute; inset: 0; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; gap: var(--space-3); opacity: 0; transition: opacity var(--transition-medium); }
 .team-card:hover .team-social-overlay { opacity: 1; }

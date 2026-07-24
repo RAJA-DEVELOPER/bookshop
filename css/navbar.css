@@ -300,15 +300,21 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: -2px;
+  right: -2px;
   background: var(--color-burgundy);
   color: white;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
+  z-index: 1;
+}
+
+.navbar .tooltip::after {
+  bottom: auto;
+  top: calc(100% + 8px);
 }
 
 /* === HAMBURGER (MOBILE) === */
@@ -566,10 +572,13 @@
 
 /* === PREFERENCE QUERIES === */
 
+@media (max-width: 640px) {
+  .navbar-logo-subtitle { display: none; }
+}
+
 @media (max-width: 480px) {
   .navbar-inner { padding-inline: var(--space-4); gap: var(--space-1); }
   .navbar-logo-icon { width: 34px; height: 34px; font-size: 1rem; }
-  .navbar-logo-subtitle { display: none; }
   .navbar-logo-title { font-size: 0.95rem; }
   .nav-actions { gap: 2px; }
   .nav-actions .nav-action-btn[aria-label="Wishlist"] { display: none; }
